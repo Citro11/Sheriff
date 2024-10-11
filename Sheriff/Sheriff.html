@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Új Cím - RP Sheriff Frakció</title>  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Színek */
+        :root {
+            --primary-color: #8B4513; /* Sötét barna */
+            --accent-color: #F4A460;  /* Világos barna */
+            --background-light: #f8f0e3; /* Krémszínű háttér */
+            --text-dark: #4f4f4f;
+        }
+
+        header {
+            height: 100vh;
+            background-image: url('sheriff-background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Áttetsző fekete réteg */
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            z-index: 1;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+            color: var(--accent-color);
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.3em;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section {
+            margin: 50px 0;
+            padding: 40px;
+            background-color: var(--background-light);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-top: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RP Sheriff Frakció</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Rólunk</a></li>
+            <li><a href="tagok.html">Tagjaink</a></li>
+            <li><a href="jelentkezés.html">Jelentkezés</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>Rólunk</h2>
+            <p>Az RP Sheriff Frakció célja a rend és biztonság fenntartása a szerverünkön. Csatlakozz hozzánk, hogy közösen őrizzük a törvényességet és a közösség érdekeit!</p>
+        </section>
+
+        <div class="btn-container">
+            <a href="tagok.html"><button class="btn">Tagjaink</button></a>
+            <a href="jelentkezés.html"><button class="btn">Jelentkezés</button></a>
+            <a href="kapcsolat.html"><button class="btn">Kapcsolat</button></a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 RP Sheriff Frakció | Minden jog fenntartva</p>
+    </footer>
+
+</body>
+</html>
